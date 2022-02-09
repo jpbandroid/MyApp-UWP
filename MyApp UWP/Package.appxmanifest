@@ -9,7 +9,7 @@
   <Identity
     Name="MyApp.New"
     Publisher="CN=jpb"
-    Version="2.2.0.0" />
+    Version="2.3.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="00e2fa06-afa7-42f1-b2ab-2c0a8c1a9835" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
