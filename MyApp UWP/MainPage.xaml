@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="MyApp_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    >
+
+    <Grid>
+        <PersonPicture x:Name="pp" DisplayName="Jakub Piotr Baranski" VerticalAlignment="Top" HorizontalAlignment="Left" />
+        
+        <Button Content="Info Hub" HorizontalAlignment="Center" Margin="0,224,0,0" VerticalAlignment="Top" Click="info" />
+        <Button Style="{StaticResource AccentButtonStyle}" Content="Ink Area" Margin="0,316,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ink" />
+        <Button Style="{StaticResource AccentButtonStyle}" Content="Buttons" HorizontalAlignment="Center" Margin="0,411,0,0" VerticalAlignment="Top" Click="buttons" />
+        <TextBox x:Name="tbox" HorizontalAlignment="Left" Margin="100,44,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" PlaceholderText="Type your name here..."/>
+        <AppBarButton Icon="Setting" Label="" HorizontalAlignment="Right" Margin="0,0,0,0" Height="50" Click="settings"/>
+        <Button Content="Fidget Widgets" Click="fidwid" RenderTransformOrigin="6.613,0.745" HorizontalAlignment="Center" Margin="0,540,0,0" VerticalAlignment="Top" />
+    </Grid>
+</Page>

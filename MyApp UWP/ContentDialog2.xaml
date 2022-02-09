@@ -1,0 +1,52 @@
+﻿<ContentDialog
+    x:Class="MyApp_UWP.ContentDialog2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Changelog"
+    PrimaryButtonText="OK"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+    <ScrollViewer>
+        <StackPanel>
+            <TextBlock Text="MyApp UWP version 2.3, released 31 January 2022" FontWeight="SemiBold" />
+            <TextBlock Text="Microsoft.NETCore.UniversalWindowsPlatform updated to version 6.2.13" TextWrapping="WrapWholeWords"/>
+            <TextBlock Text="Microsoft.UI.Xaml updated to version 2.7.0" TextWrapping="WrapWholeWords"/>
+            <TextBlock Text="Adds new info to Info Hub"/>
+            <TextBlock Text="Adds a new button to the Buttons section"/>
+            <TextBlock Text="MyApp UWP version 2.2, released 5 October 2021" FontWeight="SemiBold" />
+            <TextBlock Text="The open-source fonts Ubuntu and Comfortaa have been added to MyApp." TextWrapping="WrapWholeWords"/>
+            <TextBlock Text="Adds new info to Info Hub"/>
+            <TextBlock Text="Fidget Widgets makes a return to MyApp UWP!"/>
+            <TextBlock Text="Fixes the MyApp logo not appearing in About page bug"/>
+            <TextBlock Text="Adds a new button to the Buttons section"/>
+            <TextBlock Text="MyApp UWP version 2.1, released 28 September 2021" FontWeight="SemiBold" />
+            <TextBlock Text="Fixes some layout bugs"/>
+            <TextBlock Text="Adds new info into the Info Hub"/>
+            <TextBlock Text="The Windows Ink Area will be available on the main screen in MyApp UWP 3.0, there will be a toggle where you can turn it on in MyApp UWP 3.0" TextWrapping="WrapWholeWords"/>
+            <TextBlock Text="Source code has been released to download as a .zip archive"/>
+            <TextBlock Text="Adds a new button to the Buttons section"/>
+            <TextBlock Text="Adds a scrollbar to the Changelog dialog box"/>
+            <TextBlock Text="MyApp UWP version 2.0, released 26 September 2021" FontWeight="SemiBold" />
+            <TextBlock Text="UI Revamped, now uses Windows 11-style UI"/>
+            <TextBlock Text="The Windows Ink Area is no longer available on the main screen, may be readded in a future release" TextWrapping="Wrap"/>
+            <TextBlock Text="You can now save the drawings from the Windows Ink area as GIF images"/>
+            <TextBlock Text="You can also load your saved Ink Area sketches now!"/>
+            <TextBlock Text="New icon, inspired by MyApp Metro app icon"/>
+            <TextBlock Text="Sound added into the app"/>
+            <TextBlock Text="You can now get the focus rectangles from Xbox in MyApp UWP"/>
+            <TextBlock Text="Now licenced under the CPOL (an open-source licence)"/>
+            <TextBlock Text="Info Hub added, with each new app update, expect to see updated Windows news!" TextWrapping="Wrap"/>
+            <TextBlock Text="Fidget Widgets removed, replaced by Buttons (which is button-only)"/>
+            <TextBlock Text="MyApp UWP version 1.1, released 5 July 2021" FontWeight="SemiBold" />
+            <TextBlock Text="Changes the name of RadioButton Section to Fidget Widgets"/>
+            <TextBlock Text="Adds checkboxes to the Fidget Widgets screen"/>
+            <TextBlock Text="Adds a Windows Ink Area screen"/>
+            <TextBlock Text="Adds title to the Fidget Widgets screen"/>
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>

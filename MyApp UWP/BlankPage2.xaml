@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="MyApp_UWP.BlankPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <!-- Add the custom CalligraphicPen to the page resources. -->
+        <local:CalligraphicPen x:Key="CalligraphicPen" />
+        <!-- Specify the colors for the palette of the custom pen. -->
+        <BrushCollection x:Key="CalligraphicPenPalette">
+            <SolidColorBrush Color="Blue" />
+            <SolidColorBrush Color="Red" />
+        </BrushCollection>
+    </Page.Resources>
+
+    <Grid>
+        <InkCanvas x:Name="myInkCanvas"/>
+        <InkToolbar HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" TargetInkCanvas="{x:Bind myInkCanvas}">
+
+        </InkToolbar>
+        <Button x:Name="btnSave" 
+                    Content="Save" 
+                     Margin="140,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        <Button x:Name="btnLoad" 
+                    Content="Load" 
+                    Margin="0,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+        <Button x:Name="btnClear" 
+                    Content="Clear" 
+                    Margin="-140,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+    </Grid>
+</Page>

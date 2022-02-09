@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="MyApp_UWP.GamesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Text="Games will be available in MyApp 2.5." TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Ubuntu" FontWeight="ExtraLight" FontSize="72"/>
+
+    </Grid>
+</Page>

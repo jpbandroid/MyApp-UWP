@@ -1,0 +1,33 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
+    x:Class="MyApp_UWP.BlankPage4"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Custom:ProgressRing Margin="0,773,0,0" VerticalAlignment="Top" Height="96" Width="96"/>
+        <Custom:ProgressBar IsIndeterminate="True" VerticalAlignment="Top" Height="10" Margin="0,585,0,0"/>
+
+        <Custom:ColorPicker HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="1900"/>
+        <Custom:PersonPicture HorizontalAlignment="Left" Margin="912,773,0,0" VerticalAlignment="Top"/>
+        <Custom:ProgressRing HorizontalAlignment="Left" Margin="746,805,0,0" VerticalAlignment="Top"/>
+        <Custom:ProgressRing HorizontalAlignment="Left" Margin="746,805,0,0" VerticalAlignment="Top"/>
+        <Custom:ProgressRing HorizontalAlignment="Left" Margin="1124,805,0,0" VerticalAlignment="Top"/>
+        <Custom:ProgressRing HorizontalAlignment="Left" Margin="1124,805,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" Margin="10,47,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" Margin="639,10,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" Margin="639,47,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" Margin="1800,10,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="RadioButton" Margin="1800,46,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" Margin="1158,10,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="CheckBox" Margin="1158,47,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Page>

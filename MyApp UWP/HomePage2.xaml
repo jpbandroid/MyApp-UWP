@@ -1,0 +1,46 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Microsoft.UI.Xaml.Controls"
+    x:Class="MyApp_UWP.HomePage2"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Custom:TeachingTip HorizontalAlignment="Left" Height="0" Margin="255,186,0,0" VerticalAlignment="Top" Width="0" x:Name="tt1" Target="{x:Bind soundToggle}" Title="Change sound state without hassle"
+    Subtitle="It's easier than ever to choose if you want MyApp to play sound!">
+            <Custom:TeachingTip.IconSource>
+                <Custom:SymbolIconSource Symbol="Volume" />
+            </Custom:TeachingTip.IconSource>
+        </Custom:TeachingTip>
+        <Custom:TeachingTip HorizontalAlignment="Left" Height="0" Margin="255,186,0,0" VerticalAlignment="Top" Width="0" x:Name="tt2" Target="{x:Bind spatialAudioBox}" Title="Change spatial audio without hassle"
+    Subtitle="It's easier than ever to choose if you want MyApp to use spatial audio (or not)!">
+            <Custom:TeachingTip.IconSource>
+                <Custom:SymbolIconSource Symbol="Volume" />
+            </Custom:TeachingTip.IconSource>
+        </Custom:TeachingTip>
+        <ToggleSwitch x:Name="soundToggle" OffContent="Sound Off" OnContent="Sound On" Toggled="soundToggle_Toggled" Margin="10,84,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="spatialAudioBox" IsEnabled="False" Content="Enable Spatial Audio" Checked="spatialAudioBox_Checked" Unchecked="spatialAudioBox_Unchecked" Margin="10,129,0,0" VerticalAlignment="Top"/>
+        <TextBlock Margin="10,161,-10,539" Text="You can only enable spatial audio when sound is on!" Foreground="{ThemeResource SystemColorHotlightColor}" Style="{ThemeResource CaptionTextBlockStyle}" FontStyle="Italic"/>
+        <Custom:RadioButtons Header="FocusVisualKind:" Margin="10,233,0,0">
+            <RadioButton x:Name="HighVisibility" Content="High Visibility" Checked="HighVisibility_Checked"/>
+            <RadioButton x:Name="RevealFocus" Content="Reveal Focus"  Checked="RevealFocus_Checked"/>
+        </Custom:RadioButtons>
+        <AppBarButton Icon="LeaveChat" Label=""  Height="50" HorizontalAlignment="Center" Margin="0,0,0,0">
+            <AppBarButton.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Open the Sound TeachingTip" Click="teachingtip1"/>
+                    <MenuFlyoutItem Text="Open the Spatial Audio TeachingTip" Click="teachingtip2"/>
+                </MenuFlyout>
+            </AppBarButton.Flyout>
+
+        </AppBarButton>
+    </Grid>
+</Page>
