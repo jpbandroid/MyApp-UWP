@@ -13,11 +13,12 @@
     SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
     <ScrollViewer>
         <StackPanel>
-            <TextBlock Text="MyApp UWP version 2.3, released 31 January 2022" FontWeight="SemiBold" />
+            <TextBlock Text="MyApp UWP version 2.3, released 9 February 2022" FontWeight="SemiBold" />
             <TextBlock Text="Microsoft.NETCore.UniversalWindowsPlatform updated to version 6.2.13" TextWrapping="WrapWholeWords"/>
             <TextBlock Text="Microsoft.UI.Xaml updated to version 2.7.0" TextWrapping="WrapWholeWords"/>
             <TextBlock Text="Adds new info to Info Hub"/>
             <TextBlock Text="Adds a new button to the Buttons section"/>
+            <TextBlock Text="Licence CPOL -> MIT" TextWrapping="WrapWholeWords"/>
             <TextBlock Text="MyApp UWP version 2.2, released 5 October 2021" FontWeight="SemiBold" />
             <TextBlock Text="The open-source fonts Ubuntu and Comfortaa have been added to MyApp." TextWrapping="WrapWholeWords"/>
             <TextBlock Text="Adds new info to Info Hub"/>
