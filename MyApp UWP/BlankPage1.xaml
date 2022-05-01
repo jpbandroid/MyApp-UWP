@@ -11,7 +11,7 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"></RowDefinition>
-                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="4*"></RowDefinition>
             </Grid.RowDefinitions>
             <muxc:InfoBar
     IsOpen="True"
@@ -24,9 +24,10 @@
     IsOpen="True"
     Severity="Success"
     Title="Windows 11"
-    Message="Windows 11 will be released on 5 October!" />
+    Message="Windows 11 has been released on 5 October!" />
             </Grid>
-            <Grid Grid.Row="2">
+
+        <Grid Grid.Row="2">
                 <muxc:InfoBar x:Name="ic"
     IsOpen="True"
     Severity="Warning"
